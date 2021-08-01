@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".AttractionsScreen">
 
-    <!-- TODO: Update blank fragment layout -->
+
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/UpperSection"

@@ -388,7 +388,7 @@ class BusLineScreenMap : Fragment() {
             }
 
             override fun onNothingSelected(parent: AdapterView<*>?) {
-                TODO("Not yet implemented")
+
             }
         }
     }
