@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainScreen"
+    android:background="@color/main_background">
+
+
+    <ImageView
+        android:id="@+id/to_bustlines"
+        android:layout_width="142dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="132dp"
+        android:src="@drawable/busttimes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/bus_text_main"
+        android:layout_width="142dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="252dp"
+        android:fontFamily="@font/neucha"
+        android:text="@string/bus_travel"
+        android:textAlignment="center"
+        android:textColor="@color/text_title"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/to_attractions"
+        android:layout_width="142dp"
+        android:layout_height="134dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="28dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/attractions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/attractions_text_main"
+        android:layout_width="142dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="252dp"
+        android:fontFamily="@font/neucha"
+        android:text="@string/attractions"
+        android:textAlignment="center"
+        android:textColor="@color/text_title"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginTop="74dp"
+        android:background="@color/division_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_title_mainscreen" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/UpperSection"
+        android:layout_width="416dp"
+        android:layout_height="205dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/to_help"
+        android:layout_width="44dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/help"
+        app:layout_constraintStart_toEndOf="@+id/app_title_mainscreen"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="TODO" />
+
+    <TextView
+        android:id="@+id/app_title_mainscreen"
+        android:layout_width="234dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/neucha"
+        android:text="@string/TGM_City_Travel"
+        android:textAlignment="center"
+        android:textColor="@color/text_title"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /><![CDATA[
+
+
+
+    //android:backgroundTint="@color/"
+        android:visibility="visible"
+
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-1dp" />
+
+
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>

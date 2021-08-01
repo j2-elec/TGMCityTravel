@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">TGMCityTravel</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="TGM_City_Travel">TGM City Travel</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_line_screen">line_screen</string>
+
+
+    <string name="bus_travel">Bus Lines</string>
+    <string name="attractions">Attractions</string>
+    <string name="title_activity_bus_line_map">Map</string>
+    <string name="title_activity_attraction_maps">Map</string>
+
+
+    <!-- String containing the description of the first attraction(National Theatre) -->
+    <string name="national_theatre">The Târgu-Mureș National Theatre is the only theatre in Romania with national state wich
+        has two companies playing in two languages with two repertoires  (Hungarian and Romanian), but also functions as a single institution.</string>
+
+
+    <!-- String containing information about the app -->
+    <string name="help_info">The purpose of this application is to help people living in or visiting the city of
+        Târgu-Mureș to get around and find the Attractions of the city easily.
+     </string>
+    <!-- String containing the description of features -->
+    <string name="help_desc"> There are two main features of this application: Bus Lines and Attractions.
+        Bus Lines lists the available bus lines in the city, with an estimated arrival to the selected station and an interactive map with bus stops.
+        Attractions also has a list of attractions, with the description of attraction, bust stops at the location and also an interactive map.</string>
+    <!-- String containing the contact information -->
+    <string name="help_contact">Contact Information: Joseph Elec | elec.joseph23@gmail.com</string>
+
+
+<!-- String array containing the stops for Bus Lines 23 -->
+    <string-array name="busStation">
+        <item>no selection</item>
+        <item>Autogara Transport Local</item>
+        <item>Budiului</item>
+        <item>Cosmos</item>
+        <item>P-ţa Trandafirilor</item>
+        <item>Mihai Eminescu</item>
+        <item>SMURD</item>
+        <item>Gara Mică</item>
+        <item>P-ţa Teatrului</item>
+        <item>Cireşului</item>
+        <item>Dâmbul Pietros</item>
+        <item>Generala 11</item>
+
+
+    </string-array>
+</resources>

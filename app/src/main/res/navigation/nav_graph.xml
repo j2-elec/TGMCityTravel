@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainScreen">
+    <fragment
+        android:id="@+id/mainScreen"
+        android:name="com.example.tgmcitytravel.MainScreen"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreen_to_linesScreen"
+            app:destination="@id/linesScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_attractionsScreen"
+            app:destination="@id/attractionsScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_helpScreen"
+            app:destination="@id/helpScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/linesScreen"
+        android:name="com.example.tgmcitytravel.LinesScreen"
+        android:label="fragment_lines_screen"
+        tools:layout="@layout/fragment_lines_screen" >
+        <action
+            android:id="@+id/action_linesScreen_to_mainScreen"
+            app:destination="@id/mainScreen" />
+        <action
+            android:id="@+id/action_linesScreen_to_busLineScreenMap"
+            app:destination="@id/busLineScreenMap" />
+    </fragment>
+    <fragment
+        android:id="@+id/attractionsScreen"
+        android:name="com.example.tgmcitytravel.AttractionsScreen"
+        android:label="fragment_attractions_screen"
+        tools:layout="@layout/fragment_attractions_screen" >
+        <action
+            android:id="@+id/action_attractionsScreen_to_mainScreen"
+            app:destination="@id/mainScreen" />
+        <action
+            android:id="@+id/action_attractionsScreen_to_attractionMap"
+            app:destination="@id/attractionMap" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpScreen"
+        android:name="com.example.tgmcitytravel.HelpScreen"
+        android:label="fragment_help_screen"
+        tools:layout="@layout/fragment_help_screen" >
+        <action
+            android:id="@+id/action_helpScreen_to_mainScreen"
+            app:destination="@id/mainScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/attractionMap"
+        android:name="com.example.tgmcitytravel.AttractionScreenMap"
+        android:label="AttractionMap" >
+        <action
+            android:id="@+id/action_attractionMap_to_attractionsScreen"
+            app:destination="@id/attractionsScreen" />
+        <action
+            android:id="@+id/action_attractionMap_to_busLineScreenMap"
+            app:destination="@id/busLineScreenMap" />
+    </fragment>
+    <fragment
+        android:id="@+id/busLineScreenMap"
+        android:name="com.example.tgmcitytravel.BusLineScreenMap"
+        android:label="BusLineScreenMap" >
+        <action
+            android:id="@+id/action_busLineScreenMap_to_linesScreen"
+            app:destination="@id/linesScreen" />
+    </fragment>
+</navigation>

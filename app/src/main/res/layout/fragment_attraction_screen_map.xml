@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/frameLayout4"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".AttractionScreen">
+
+<View
+    android:id="@+id/view2"
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:background="@color/division_line"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/UpperSection" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="421dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="236dp"
+        android:background="@color/division_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpperSection" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="421dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="312dp"
+        android:background="@color/division_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpperSection" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/UpperSection"
+        android:layout_width="427dp"
+        android:layout_height="178dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+<ImageView
+    android:id="@+id/attraction_to_attractions"
+    android:layout_width="53dp"
+    android:layout_height="51dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:src="@drawable/back"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="413dp"
+        android:layout_height="233dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:context=".AttractionScreenMap" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="616dp"
+        android:fontFamily="@font/neucha"
+        android:text="National Theatre"
+        android:textAlignment="center"
+        android:textColor="@color/text_title"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/map"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="168dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="4dp"
+
+        android:layout_marginEnd="9dp"
+        android:fontFamily="@font/mclarenregular"
+        android:text="@string/national_theatre"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="214dp"
+        android:layout_height="161dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/dsc_4473_1_1_01"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <TextView
+        android:id="@+id/attraction_busStops"
+        android:layout_width="188dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/mclarenregular"
+        android:text="Bus Stops at Attraction : "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+    <TextView
+        android:id="@+id/attr_busline"
+        android:layout_width="127dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="31dp"
+        android:fontFamily="@font/mclarenregular"
+        android:text="P-ţa Teatrului Stop"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

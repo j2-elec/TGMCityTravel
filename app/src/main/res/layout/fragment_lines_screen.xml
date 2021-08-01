@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LinesScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/UpperSection"
+        android:layout_width="417dp"
+        android:layout_height="178dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/view2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/division_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UpperSection" />
+
+    <ImageView
+        android:id="@+id/lines_to_main"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/line_23"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/main_background"
+        android:fontFamily="@font/mclarenregular"
+        android:text="Line 23"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/line_4"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/main_background"
+        android:fontFamily="@font/mclarenregular"
+        android:text="Line 4"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+    <Button
+        android:id="@+id/line_6"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="49dp"
+        android:background="@color/main_background"
+        android:fontFamily="@font/mclarenregular"
+        android:text="Line 6"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_23" />
+
+    <Button
+        android:id="@+id/line_14"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/main_background"
+        android:fontFamily="@font/mclarenregular"
+        android:text="Line 14"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_4" />
+
+    <Button
+        android:id="@+id/line_20"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="49dp"
+        android:background="@color/main_background"
+        android:fontFamily="@font/mclarenregular"
+        android:text="Line 20"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_6" />
+
+    <Button
+        android:id="@+id/line_10"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/main_background"
+        android:fontFamily="@font/mclarenregular"
+        android:text="Line 10"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_14" />
+
+    <Button
+        android:id="@+id/line_32"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="49dp"
+        android:background="@color/main_background"
+        android:fontFamily="@font/mclarenregular"
+        android:text="Line 32"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_20" />
+
+    <Button
+        android:id="@+id/line_44"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="36dp"
+        android:background="@color/main_background"
+        android:fontFamily="@font/mclarenregular"
+        android:text="Line 44"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/line_10" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="131dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="616dp"
+        android:fontFamily="@font/neucha"
+        android:text="Bus Lines"
+        android:textAlignment="center"
+        android:textColor="@color/text_title"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
