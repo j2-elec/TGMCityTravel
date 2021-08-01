@@ -18,24 +18,27 @@ tools:context=".AttractionScreen">
 
     <View
         android:id="@+id/view3"
-        android:layout_width="421dp"
-        android:layout_height="10dp"
+        android:layout_width="436dp"
+        android:layout_height="11dp"
         android:layout_marginTop="236dp"
+        android:layout_marginBottom="25dp"
         android:background="@color/division_line"
+        app:layout_constraintBottom_toTopOf="@+id/attraction_busStops"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/UpperSection" />
 
     <View
         android:id="@+id/view4"
-        android:layout_width="421dp"
+        android:layout_width="439dp"
         android:layout_height="10dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="44dp"
         android:background="@color/division_line"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/UpperSection" />
+        app:layout_constraintTop_toTopOf="@+id/attraction_busStops" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/UpperSection"
@@ -46,7 +49,8 @@ tools:context=".AttractionScreen">
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toTopOf="@+id/view2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 <ImageView
     android:id="@+id/attraction_to_attractions"
     android:layout_width="53dp"
@@ -60,10 +64,11 @@ tools:context=".AttractionScreen">
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="413dp"
-        android:layout_height="233dp"
+        android:layout_width="392dp"
+        android:layout_height="303dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:context=".AttractionScreenMap" />
 
@@ -81,7 +86,9 @@ tools:context=".AttractionScreen">
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="@+id/map"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/UpperSection"
+        app:layout_constraintVertical_bias="0.458" />
 
     <TextView
         android:id="@+id/textView4"
@@ -90,25 +97,28 @@ tools:context=".AttractionScreen">
         android:layout_marginStart="6dp"
         android:layout_marginTop="4dp"
 
-        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="14dp"
         android:fontFamily="@font/mclarenregular"
         android:text="@string/national_theatre"
         android:textAlignment="textStart"
         android:textColor="@color/black"
         android:textSize="12sp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="214dp"
         android:layout_height="161dp"
-        android:layout_marginEnd="5dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="65dp"
         android:src="@drawable/dsc_4473_1_1_01"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        app:layout_constraintTop_toBottomOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/attraction_busStops"
@@ -116,11 +126,13 @@ tools:context=".AttractionScreen">
         android:layout_height="21dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="25dp"
+        android:layout_marginEnd="46dp"
         android:fontFamily="@font/mclarenregular"
         android:text="Bus Stops at Attraction : "
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/attr_busline"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view3" />
 
@@ -128,15 +140,18 @@ tools:context=".AttractionScreen">
         android:id="@+id/attr_busline"
         android:layout_width="127dp"
         android:layout_height="21dp"
+        android:layout_marginStart="46dp"
         android:layout_marginTop="25dp"
-        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="11dp"
         android:fontFamily="@font/mclarenregular"
         android:text="P-ţa Teatrului Stop"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="12sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view3" />
+        app:layout_constraintBottom_toTopOf="@+id/view4"
+        app:layout_constraintStart_toEndOf="@+id/attraction_busStops"
+        app:layout_constraintTop_toBottomOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

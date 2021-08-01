@@ -32,7 +32,7 @@
         android:layout_height="47dp"
         android:layout_marginStart="140dp"
         android:layout_marginEnd="140dp"
-        android:layout_marginBottom="616dp"
+        android:layout_marginBottom="692dp"
         android:fontFamily="@font/neucha"
         android:text="Help"
         android:textAlignment="center"
@@ -40,7 +40,6 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
@@ -87,7 +86,7 @@
         android:layout_width="189dp"
         android:layout_height="84dp"
         android:layout_marginStart="204dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
 
         android:fontFamily="@font/mclarenregular"
         android:text="@string/help_contact"

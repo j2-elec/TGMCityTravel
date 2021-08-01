@@ -157,7 +157,7 @@
         android:layout_height="47dp"
         android:layout_marginStart="140dp"
         android:layout_marginEnd="140dp"
-        android:layout_marginBottom="616dp"
+        android:layout_marginBottom="692dp"
         android:fontFamily="@font/neucha"
         android:text="Bus Lines"
         android:textAlignment="center"
@@ -165,7 +165,6 @@
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
