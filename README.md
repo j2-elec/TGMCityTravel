@@ -10,3 +10,9 @@ The attraction screen has a short description, an image, the buses stopping at l
 and an interactive map showing the attraction's location and a nearby bus stop.
 
 The app also has a help section with information about the app, the description of the features and also contact information as well.
+
+
+The files can be downloaded and opened in Android Studio, tested on version 4.1.2 .
+
+It is recommeneded to run the application on Pixel_3a_API_30_x86.
+
